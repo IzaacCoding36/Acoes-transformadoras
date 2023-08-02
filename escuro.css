@@ -145,7 +145,7 @@ svg {width: 10%; height: 10%;
 }
 
 /*Computador*/
-@media screen and (min-width: 728px){
+@media screen and (min-width: 528px){
    html {height: 655%;}
    .Titulo {top: 675px;}
    .Apresentacao{font-size: 30px; width: 500px; top: 675px;}
