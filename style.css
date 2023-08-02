@@ -1,0 +1,172 @@
+/*Projeto Agrinho*/
+
+/*Início*/
+
+/*Mobile*/
+html {height: 875%; background: linear-gradient(to left top, #e7e7e7e7, #4f3c59)}
+
+body {margin: 0; padding: 0;
+     background-image: url(Imagens/Principal.png);
+     background-size: 100%;
+     background-repeat: no-repeat;
+}
+
+svg {width: 10%; height: 10%;
+     background: linear-gradient(to left, #286e3a, #000000);
+     border: solid 3px black;
+     border-radius: 5px;
+}
+
+.Tema_Claro {color:#b38b11;
+}
+
+.Linguagem {color:#E7E7E7;
+}
+
+.botao_superior {max-width: 100%;
+     position: relative; right: 25px;
+}
+
+.Titulo {position: relative; top: 275px; 
+     font-size: 20px; text-decoration: underline;
+}
+
+.Apresentacao {position: relative;
+     top: 275px; 
+     font-size: 15px; width: 250px;
+     text-align: center;
+}
+
+#a1 {color: lime;}
+#a2 {color: yellow;}
+#a3 {color: red;}
+#a4 {color: cyan;}
+
+.Titulo_sus {position: relative; top: 475px; font-size: 20px; color: green;
+     text-decoration: underline; border: solid 2px;
+     border-radius: 50%;
+     background: linear-gradient(to left, #286e3a, #000000);
+}
+
+.Imagem {position: relative; top: 475px; 
+     height: 40%; width: 40%;
+     border: solid 3px; border-radius: 20%;
+}
+
+.Texto_sus {position: relative;
+     top: 475px; font-size: 15px; width: 250px;
+     text-align: center;
+}
+
+.Titulo_edu {position: relative; top: 575px; 
+     font-size: 20px; color: #b38b11;
+     text-decoration: underline; border: solid 2px;
+     border-radius: 50%;
+     background: linear-gradient(to left, #745e0c, #000000);
+}
+
+.Imagem2 {position: relative; top: 575px; 
+     height: 40%; width: 40%;
+     border: solid 3px; border-radius: 20%;
+}
+
+.Texto_edu {position: relative;
+     top: 575px; font-size: 15px; width: 250px;
+     text-align: center;
+}
+
+.Titulo_col {position: relative; top: 675px;
+     font-size: 20px; color: #b14848;
+     text-decoration: underline; border: solid 2px;
+     border-radius: 50%;
+     background: linear-gradient(to left, #831616, #000000);
+}
+
+.Imagem3 {position: relative; top: 675px;
+     height: 40%; width: 40%;
+     border: solid 3px; border-radius: 20%;
+}
+
+.Texto_col {position: relative;
+     top: 675px; font-size: 15px; width: 250px;
+     text-align: center;
+}
+
+.Recomendacoes {position: relative;
+     top: 775px; font-size: 15px; width: 250px;
+     text-align: center;
+}
+
+.Texto_filmes {position: relative;
+     top: 775px; font-size: 20px; width: 250px;
+     text-align: center; text-decoration: underline;
+}
+
+.Filmes {position: relative; top: 775px;
+     height: 40%; width: 40%;
+     border: solid 3px; border-radius: 20%;
+}
+
+.Inicio_tech {position: relative;
+     top: 775px; font-size: 15px; width: 250px;
+     text-align: center;
+}
+
+.Titulo_tech {position: relative; top: 875px;
+     font-size: 20px; color: #1390d8;
+     text-decoration: underline; border: solid 2px;
+     border-radius: 50%;
+     background: linear-gradient(to left, #166d83, #000000);
+}
+
+.Imagem4 {position: relative; top: 875px;
+     height: 40%; width: 40%;
+     border: solid 3px; border-radius: 20%;
+}
+
+.Texto_tech {position: relative;
+     top: 875px; font-size: 15px; width: 250px;
+     text-align: center;
+}
+
+#b1 {color: cyan; text-decoration: underline;
+     font-size: 20px;}
+
+.Agradecimentos {position: relative;
+     top: 975px; font-size: 15px; width: 250px;
+     text-align: center;
+}
+
+.Info {position: relative;
+     top: 1175px; font-size: 15px; width: 250px;
+     text-align: center;
+}
+
+/*Computador*/
+@media screen and (min-width: 1024px){
+   html {height: 655%;}
+   .Titulo {top: 675px;}
+   .Apresentacao{font-size: 30px; width: 500px; top: 675px;}
+   .Titulo_sus{font-size: 35px; top: 875px;}
+   .Imagem{top: 875px;}
+   .Texto_sus{font-size: 30px; width: 500px; top: 875px;}
+   .Titulo_edu{font-size: 35px; top: 975px;}
+   .Imagem2{top: 975px;}
+   .Texto_edu{font-size: 30px; width: 500px; top: 975px;}
+   .Titulo_col{font-size: 35px; top: 1075px;}
+   .Imagem3{top: 1075px;}
+   .Texto_col{font-size: 30px; width: 500px; top: 1075px;}
+   .Recomendacoes{font-size: 30px; width: 500px; top: 1175px;}
+   .Texto_filmes{font-size: 35px; width: 500px; top: 1175px;}
+   .Filmes{top: 1175px;}
+   .Inicio_tech{font-size: 30px; width: 500px; top: 1175px;}
+   .Titulo_tech{font-size: 35px; top: 1275px;}
+   .Imagem4{top: 1275px;}
+   .Texto_tech{font-size: 30px; width: 500px; top: 1275px}
+   .Agradecimentos{font-size: 30px; width: 500px; top: 1275px;}
+   .Info{font-size: 30px; width: 500px; top: 1475px;}
+   #b1 {font-size: 35px;}
+   #c1 {font-size: 35px;}
+}
+
+/*Fim*/

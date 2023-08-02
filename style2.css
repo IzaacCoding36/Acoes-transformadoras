@@ -1,0 +1,172 @@
+/*Project Agrinho*/
+
+/*Start*/
+
+/*Mobile*/
+html {height: 855%; background: linear-gradient(to left top, #e7e7e7e7, #4f3c59)}
+
+body {margin: 0; padding: 0;
+     background-image: url(Imagens/Principal.png);
+     background-size: 100%;
+     background-repeat: no-repeat;
+}
+
+svg {width: 10%; height: 10%;
+     background: linear-gradient(to left, #286e3a, #000000);
+     border: solid 3px black;
+     border-radius: 5px;
+}
+
+.Light_Theme {color:#b38b11;
+}
+
+.Language {color:#E7E7E7;
+}
+
+.superior_button {max-width: 100%;
+     position: relative; right: 25px;
+}
+
+.Title {position: relative; top: 275px; 
+     font-size: 20px; text-decoration: underline;
+}
+
+.Presentation {position: relative;
+     top: 275px; 
+     font-size: 15px; width: 250px;
+     text-align: center;
+}
+
+#a1 {color: lime;}
+#a2 {color: yellow;}
+#a3 {color: red;}
+#a4 {color: cyan;}
+
+.Title_sus {position: relative; top: 475px; font-size: 20px; color: green;
+     text-decoration: underline; border: solid 2px;
+     border-radius: 50%;
+     background: linear-gradient(to left, #286e3a, #000000);
+}
+
+.Image {position: relative; top: 475px; 
+     height: 40%; width: 40%;
+     border: solid 3px; border-radius: 20%;
+}
+
+.Text_sus {position: relative;
+     top: 475px; font-size: 15px; width: 250px;
+     text-align: center;
+}
+
+.Title_edu {position: relative; top: 575px; 
+     font-size: 20px; color: #b38b11;
+     text-decoration: underline; border: solid 2px;
+     border-radius: 50%;
+     background: linear-gradient(to left, #745e0c, #000000);
+}
+
+.Image2 {position: relative; top: 575px; 
+     height: 40%; width: 40%;
+     border: solid 3px; border-radius: 20%;
+}
+
+.Text_edu {position: relative;
+     top: 575px; font-size: 15px; width: 250px;
+     text-align: center;
+}
+
+.Title_col {position: relative; top: 675px;
+     font-size: 20px; color: #b14848;
+     text-decoration: underline; border: solid 2px;
+     border-radius: 50%;
+     background: linear-gradient(to left, #831616, #000000);
+}
+
+.Image3 {position: relative; top: 675px;
+     height: 40%; width: 40%;
+     border: solid 3px; border-radius: 20%;
+}
+
+.Text_col {position: relative;
+     top: 675px; font-size: 15px; width: 250px;
+     text-align: center;
+}
+
+.Recommendations {position: relative;
+     top: 775px; font-size: 15px; width: 250px;
+     text-align: center;
+}
+
+.Text_movies {position: relative;
+     top: 775px; font-size: 20px; width: 250px;
+     text-align: center; text-decoration: underline;
+}
+
+.Movies {position: relative; top: 775px;
+     height: 40%; width: 40%;
+     border: solid 3px; border-radius: 20%;
+}
+
+.Start_tech {position: relative;
+     top: 775px; font-size: 15px; width: 250px;
+     text-align: center;
+}
+
+.Title_tech {position: relative; top: 875px;
+     font-size: 20px; color: #1390d8;
+     text-decoration: underline; border: solid 2px;
+     border-radius: 50%;
+     background: linear-gradient(to left, #166d83, #000000);
+}
+
+.Image4 {position: relative; top: 875px;
+     height: 40%; width: 40%;
+     border: solid 3px; border-radius: 20%;
+}
+
+.Text_tech {position: relative;
+     top: 875px; font-size: 15px; width: 250px;
+     text-align: center;
+}
+
+#b1 {color: cyan; text-decoration: underline;
+     font-size: 20px;}
+
+.Thanks {position: relative;
+     top: 975px; font-size: 15px; width: 250px;
+     text-align: center;
+}
+
+.Info {position: relative;
+     top: 1175px; font-size: 15px; width: 250px;
+     text-align: center;
+}
+
+/*Computer*/
+@media screen and (min-width: 1024px){
+   html {height: 655%;}
+   .Title {top: 675px;}
+   .Presentation{font-size: 30px; width: 500px; top: 675px;}
+   .Title_sus{font-size: 35px; top: 875px;}
+   .Image{top: 875px;}
+   .Text_sus{font-size: 30px; width: 500px; top: 875px;}
+   .Title_edu{font-size: 35px; top: 975px;}
+   .Image2{top: 975px;}
+   .Text_edu{font-size: 30px; width: 500px; top: 975px;}
+   .Title_col{font-size: 35px; top: 1075px;}
+   .Image3{top: 1075px;}
+   .Text_col{font-size: 30px; width: 500px; top: 1075px;}
+   .Recommendations{font-size: 30px; width: 500px; top: 1175px;}
+   .Text_movies{font-size: 35px; width: 500px; top: 1175px;}
+   .Movies{top: 1175px;}
+   .Start_tech{font-size: 30px; width: 500px; top: 1175px;}
+   .Title_tech{font-size: 35px; top: 1275px;}
+   .Image4{top: 1275px;}
+   .Text_tech{font-size: 30px; width: 500px; top: 1275px}
+   .Thanks{font-size: 30px; width: 500px; top: 1275px;}
+   .Info{font-size: 30px; width: 500px; top: 1475px;}
+   #b1 {font-size: 35px;}
+   #c1 {font-size: 35px;}
+}
+
+/*End*/
