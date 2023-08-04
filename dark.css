@@ -4,7 +4,7 @@
 /*Start*/
 
 /*Mobile*/
-html {height: 1105%; background: linear-gradient(to left top, #000000, #4f3c59);
+html {height: 1025%; background: linear-gradient(to left top, #000000, #4f3c59);
       font-family: 'Poppins', sans-serif;}
 
 body {margin: 0; padding: 0;
@@ -147,7 +147,7 @@ svg {width: 10%; height: 10%;
 
 /*Computer*/
 @media screen and (min-width: 528px){
-   html {height: 805%;}
+   html {height: 785%;}
    .Title {top: 675px;}
    .Presentation{font-size: 30px; width: 500px; top: 675px;}
    .Title_sus{font-size: 35px; top: 875px;}
