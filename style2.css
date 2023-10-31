@@ -1,16 +1,18 @@
-/*Project Agrinho*/
-
 /*Start*/
 
 /*Mobile*/
-html {height: 965%; background: linear-gradient(to left top, #e7e7e7e7, #4f3c59);
-      font-family: 'Poppins', sans-serif;}
+html {background: linear-gradient(to left top, #e7e7e7e7, #4f3c59);
+      font-family: 'Poppins', sans-serif;
+      display: flex;}
 
 body {margin: 0; padding: 0;
      background-image: url(Imagens/Principal.png);
-     background-size: 100%;
+     background-size: 65%;
+     background-position: top;
      background-repeat: no-repeat;
 }
+
+a {text-decoration: none;}
 
 svg {width: 10%; height: 10%;
      background: linear-gradient(to left, #286e3a, #000000);
@@ -145,7 +147,6 @@ svg {width: 10%; height: 10%;
 
 /*Computer*/
 @media screen and (min-width: 528px){
-   html {height: 785%;}
    .Title {top: 675px;}
    .Presentation{font-size: 30px; width: 500px; top: 675px;}
    .Title_sus{font-size: 35px; top: 875px;}
