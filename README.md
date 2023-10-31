@@ -1,8 +1,4 @@
-# Projeto_Agrinho
-Esse repositório trata sobre a publicação do meu projeto agrinho 2023
+# Ações Transformadoras
+Ola! Esse repositório trata sobre ações que refletem em nosso breve futuro, como simples coisas que podemos fazer para vivermos em um possível futuro melhor, algo que realmente é provável de se acontecer se fizermos boas ações e investir no novo.
 
-Olá! Bem-vindo á página do meu projeto, bem, a página que eu construí trata sobre ações que transformam o mundo.
-
-Algumas opções como temas e linguagens foram acrescentados ao site principal, para gerar assim um "diferencial" na leitura.
-
-Espero que leia com atenção e aproveite!
+(Esse projeto anteriormente foi desenvolvido para o concurso Agrinho de programação do estado do Paraná em 2023)
