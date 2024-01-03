@@ -8,16 +8,17 @@ html {background: linear-gradient(to left top, #000000, #4f3c59);
       display: flex;}
 
 body {margin: 0; padding: 0;
-     background-image: url(Imagens/Principal.png);
-     background-size: 65%;
-     background-position: top;
-     background-repeat: no-repeat;
+      background-image: url(Imagens/Principal.png);
+      background-size: 65%;
+      background-position: top;
+      background-repeat: no-repeat;
 }
 
 a {text-decoration: none;}
 
 svg {width: 10%; height: 10%;
      background: linear-gradient(to left, #286e3a, #000000);
+     box-shadow: 0px 0px 15px green;
      border: solid 3px black;
      border-radius: 5px;
 }
@@ -29,18 +30,19 @@ svg {width: 10%; height: 10%;
 }
 
 .superior_button {max-width: 100%;
-     position: relative; right: 25px;
+                  position: relative; right: 25px;
 }
 
 .Title {position: relative; top: 275px; 
-     font-size: 20px; text-decoration: underline;
-     color: #e7e7e7e7;
+        font-size: 20px; text-decoration: underline;
+        color: white;
 }
 
 .Presentation {position: relative;
-     top: 275px; 
-     font-size: 15px; width: 250px;
-     text-align: center; color: #e7e7e7e7;
+               top: 275px; 
+               font-size: 15px; width: 250px;
+               text-align: center;
+               color: #e7e7e7e7;
 }
 
 #a1 {color: lime;}
@@ -48,130 +50,154 @@ svg {width: 10%; height: 10%;
 #a3 {color: red;}
 #a4 {color: cyan;}
 
-.Title_sus {position: relative; top: 475px; font-size: 20px; color: green;
-     text-decoration: underline; border: solid 2px;
-     border-radius: 50%;
-     background: linear-gradient(to left, #286e3a, #000000);
+.Title_sus {position: relative; top: 475px; 
+            font-size: 20px; 
+            color: green;
+            box-shadow: 0px 0px 15px green;
+            text-decoration: underline; border: solid 2px;
+            border-radius: 50%;
+            background: linear-gradient(to left, #286e3a, #000000);
 }
 
 .Image {position: relative; top: 475px; 
-     height: 40%; width: 40%;
-     border: solid 3px; border-radius: 20%;
+        height: 40%; width: 40%;
+        box-shadow: 5px 5px 15px black;
+        border: solid 3px; border-radius: 20%;
 }
 
 .Text_sus {position: relative;
-     top: 475px; font-size: 15px; width: 250px;
-     text-align: center; color: #e7e7e7e7;
+           top: 475px; font-size: 15px; width: 250px;
+           text-align: center;
+           color: #e7e7e7e7;
 }
 
 .Title_edu {position: relative; top: 575px; 
-     font-size: 20px; color: #b38b11;
-     text-decoration: underline; border: solid 2px;
-     border-radius: 50%;
-     background: linear-gradient(to left, #745e0c, #000000);
+            font-size: 20px; color: #b38b11;
+            box-shadow: 0px 0px 15px #b38b11;
+            text-decoration: underline; border: solid 2px;
+            border-radius: 50%;
+            background: linear-gradient(to left, #745e0c, #000000);
 }
 
 .Image2 {position: relative; top: 575px; 
-     height: 40%; width: 40%;
-     border: solid 3px; border-radius: 20%;
+         height: 40%; width: 40%;
+         box-shadow: 5px 5px 15px black;
+         border: solid 3px; border-radius: 20%;
 }
 
 .Text_edu {position: relative;
-     top: 575px; font-size: 15px; width: 250px;
-     text-align: center; color: #e7e7e7e7;
+           top: 575px; font-size: 15px; width: 250px;
+           text-align: center;
+           color: #e7e7e7e7;
 }
 
 .Title_col {position: relative; top: 675px;
-     font-size: 20px; color: #b14848;
-     text-decoration: underline; border: solid 2px;
-     border-radius: 50%;
-     background: linear-gradient(to left, #831616, #000000);
+            font-size: 20px; color: #b14848;
+            box-shadow: 0px 0px 15px #831616;
+            text-decoration: underline; border: solid 2px;
+            border-radius: 50%;
+            background: linear-gradient(to left, #831616, #000000);
 }
 
 .Image3 {position: relative; top: 675px;
-     height: 40%; width: 40%;
-     border: solid 3px; border-radius: 20%;
+         height: 40%; width: 40%;
+         box-shadow: 5px 5px 15px black;
+         border: solid 3px; border-radius: 20%;
 }
 
 .Text_col {position: relative;
-     top: 675px; font-size: 15px; width: 250px;
-     text-align: center; color: #e7e7e7e7;
+           top: 675px; font-size: 15px; width: 250px;
+           text-align: center;
+           color: #e7e7e7e7;
 }
 
 .Recommendations {position: relative;
-     top: 775px; font-size: 15px; width: 250px;
-     text-align: center; color: #e7e7e7e7;
+                  top: 775px; font-size: 15px; width: 250px;
+                  text-align: center;
+                  color: #e7e7e7e7;
 }
 
 .Text_movies {position: relative;
-     top: 775px; font-size: 20px; width: 250px;
-     text-align: center; text-decoration: underline; color: #e7e7e7e7;
+              top: 775px; font-size: 20px; width: 250px;
+              text-align: center; text-decoration: underline;
+              color: white;
 }
 
 .Movies {position: relative; top: 775px;
-     height: 40%; width: 40%;
-     border: solid 3px; border-radius: 20%;
+         height: 40%; width: 40%;
+         box-shadow: 5px 5px 15px black;
+         border: solid 3px; border-radius: 20%;
 }
 
 .Start_tech {position: relative;
-     top: 775px; font-size: 15px; width: 250px;
-     text-align: center; color: #e7e7e7e7;
+             top: 775px; font-size: 15px; width: 250px;
+             text-align: center;
+             color: #e7e7e7e7;
 }
 
 .Title_tech {position: relative; top: 875px;
-     font-size: 20px; color: #1390d8;
-     text-decoration: underline; border: solid 2px;
-     border-radius: 50%;
-     background: linear-gradient(to left, #166d83, #000000);
+             font-size: 20px; color: #1390d8;
+             box-shadow: 0px 0px 15px cyan;
+             text-decoration: underline; border: solid 2px;
+             border-radius: 50%;
+             background: linear-gradient(to left, #166d83, #000000);
 }
 
 .Image4 {position: relative; top: 875px;
-     height: 40%; width: 40%;
-     border: solid 3px; border-radius: 20%;
+         height: 40%; width: 40%;
+         box-shadow: 5px 5px 15px black;
+         border: solid 3px; border-radius: 20%;
 }
 
 .Text_tech {position: relative;
-     top: 875px; font-size: 15px; width: 250px;
-     text-align: center; color: #e7e7e7e7;
+            top: 875px; font-size: 15px; width: 250px;
+            text-align: center;
+            color: #e7e7e7e7;
 }
 
 #b1 {color: cyan; text-decoration: underline;
      font-size: 20px;}
 
 .Thanks {position: relative;
-     top: 975px; font-size: 15px; width: 250px;
-     text-align: center; color: #e7e7e7e7;
+         top: 975px; font-size: 15px; width: 250px;
+         text-align: center;
+         color: #e7e7e7e7;
 }
 
 .Info {position: relative;
-     top: 1175px; font-size: 15px; width: 250px;
-     text-align: center; color: #e7e7e7e7;
+       top: 1175px; font-size: 15px; width: 250px;
+       text-align: center;
+       color: #e7e7e7e7;
 }
 
 /*Computer*/
-@media screen and (min-width: 528px){
-   .Title {top: 675px;}
-   .Presentation{font-size: 30px; width: 500px; top: 675px;}
-   .Title_sus{font-size: 35px; top: 875px;}
-   .Image{top: 875px;}
-   .Text_sus{font-size: 30px; width: 500px; top: 875px;}
-   .Title_edu{font-size: 35px; top: 975px;}
-   .Image2{top: 975px;}
-   .Text_edu{font-size: 30px; width: 500px; top: 975px;}
-   .Title_col{font-size: 35px; top: 1075px;}
-   .Image3{top: 1075px;}
-   .Text_col{font-size: 30px; width: 500px; top: 1075px;}
-   .Recommendations{font-size: 30px; width: 500px; top: 1175px;}
-   .Text_movies{font-size: 35px; width: 500px; top: 1175px;}
-   .Movies{top: 1175px;}
-   .Start_tech{font-size: 30px; width: 500px; top: 1175px;}
-   .Title_tech{font-size: 35px; top: 1275px;}
-   .Image4{top: 1275px;}
-   .Text_tech{font-size: 30px; width: 500px; top: 1275px}
-   .Thanks{font-size: 30px; width: 500px; top: 1275px;}
-   .Info{font-size: 30px; width: 500px; top: 1475px;}
-   #b1 {font-size: 35px;}
-   #c1 {font-size: 35px;}
+@media screen and (min-width: 928px){
+   html {height: 955%;}
+   svg {height: 4%; width: 4%; position: fixed; left: 105px}
+   .Dark_Theme {height: 4%; width: 4%; position: fixed; left: 205px}
+   .Title {top: 275px; font-size: 20px;}
+   body {background-size: 25%;}
+   .Presentation {font-size: 15px; width: 500px; top: 275px;}
+   .Title_sus {font-size: 20px; top: 375px;}
+   .Image {top: 375px; width: 25%; height: 25%}
+   .Text_sus {font-size: 15px; width: 500px; top: 375px;}
+   .Title_edu {font-size: 20px; top: 475px;}
+   .Image2 {top: 475px; width: 25%; height: 25%}
+   .Text_edu {font-size: 15px; width: 500px; top: 475px;}
+   .Title_col {font-size: 20px; top: 575px;}
+   .Image3 {top: 575px; width: 25%; height: 25%}
+   .Text_col {font-size: 15px; width: 500px; top: 575px;}
+   .Recommendations {font-size: 15px; width: 500px; top: 675px;}
+   .Text_movies {font-size: 20px; width: 500px; top: 675px;}
+   .Movies {top: 675px; width: 25%; height: 25%}
+   .Start_tech {font-size: 15px; width: 500px; top: 775px;}
+   .Title_tech {font-size: 20px; top: 875px;}
+   .Image4 {top: 875px; width: 25%; height: 25%}
+   .Text_tech {font-size: 15px; width: 500px; top: 875px}
+   .Thanks {font-size: 15px; width: 500px; top: 875px;}
+   .Info {font-size: 15px; width: 500px; top: 975px;}
+   #b1 {font-size: 20px;}
+   #c1 {font-size: 20px;}
 }
 
 /*End*/
