@@ -7,6 +7,26 @@ html {background: linear-gradient(to left top, #000000, #4f3c59);
       font-family: 'Poppins', sans-serif;
       display: flex;}
 
+@keyframes glow1 { 0% {box-shadow: 0px 0px 15px green;}
+                   50% {box-shadow: 0px 0px 15px lime;}
+                   100% {box-shadow: 0px 0px 15px green;}
+}
+
+@keyframes glow2 { 0% {box-shadow: 0px 0px 15px #b38b11;}
+                   50% {box-shadow: 0px 0px 15px yellow;}
+                   100% {box-shadow: 0px 0px 15px #b38b11;}
+}
+
+@keyframes glow3 { 0% {box-shadow: 0px 0px 15px #831616;}
+                   50% {box-shadow: 0px 0px 15px red;}
+                   100% {box-shadow: 0px 0px 15px #831616;}
+}
+
+@keyframes glow4 { 0% {box-shadow: 0px 0px 15px #1390d8;}
+                   50% {box-shadow: 0px 0px 15px cyan;}
+                   100% {box-shadow: 0px 0px 15px #1390d8;}
+}
+
 body {margin: 0; padding: 0;
       background-image: url(Imagens/Principal.png);
       background-size: 65%;
@@ -17,16 +37,19 @@ body {margin: 0; padding: 0;
 a {text-decoration: none;}
 
 svg {width: 10%; height: 10%;
-     background: linear-gradient(to left, #286e3a, #000000);
+     background: linear-gradient(to left, #286e3a, #e7e7e7e7);
      box-shadow: 0px 0px 15px green;
-     border: solid 3px black;
+     border: solid 3px #e7e7e7e7;
      border-radius: 5px;
+     animation-name: glow1; animation-duration: 5s; animation-delay: 1.5; animation-iteration-count: infinite;
 }
+
+svg:hover {background: white; border: solid 3px black;}
 
 .Dark_Theme {color:#140d66;
 }
 
-.Language {color:#E7E7E7;
+.Language {color:#000000;
 }
 
 .superior_button {max-width: 100%;
@@ -54,9 +77,10 @@ svg {width: 10%; height: 10%;
             font-size: 20px; 
             color: green;
             box-shadow: 0px 0px 15px green;
-            text-decoration: underline; border: solid 2px;
+            border: solid 2px;
             border-radius: 50%;
             background: linear-gradient(to left, #286e3a, #000000);
+            animation-name: glow1; animation-duration: 5s; animation-delay: 1.5; animation-iteration-count: infinite;
 }
 
 .Image {position: relative; top: 475px; 
@@ -64,6 +88,8 @@ svg {width: 10%; height: 10%;
         box-shadow: 5px 5px 15px black;
         border: solid 3px; border-radius: 20%;
 }
+
+.Image:hover {animation-name: glow1; animation-duration: 5s; animation-delay: 1.5; animation-iteration-count: infinite;}
 
 .Text_sus {position: relative;
            top: 475px; font-size: 15px; width: 250px;
@@ -74,9 +100,10 @@ svg {width: 10%; height: 10%;
 .Title_edu {position: relative; top: 575px; 
             font-size: 20px; color: #b38b11;
             box-shadow: 0px 0px 15px #b38b11;
-            text-decoration: underline; border: solid 2px;
+            border: solid 2px;
             border-radius: 50%;
             background: linear-gradient(to left, #745e0c, #000000);
+            animation-name: glow2; animation-duration: 5s; animation-delay: 1.5; animation-iteration-count: infinite;
 }
 
 .Image2 {position: relative; top: 575px; 
@@ -84,6 +111,8 @@ svg {width: 10%; height: 10%;
          box-shadow: 5px 5px 15px black;
          border: solid 3px; border-radius: 20%;
 }
+
+.Image2:hover {animation-name: glow2; animation-duration: 5s; animation-delay: 1.5; animation-iteration-count: infinite;}
 
 .Text_edu {position: relative;
            top: 575px; font-size: 15px; width: 250px;
@@ -94,9 +123,10 @@ svg {width: 10%; height: 10%;
 .Title_col {position: relative; top: 675px;
             font-size: 20px; color: #b14848;
             box-shadow: 0px 0px 15px #831616;
-            text-decoration: underline; border: solid 2px;
+            border: solid 2px;
             border-radius: 50%;
             background: linear-gradient(to left, #831616, #000000);
+            animation-name: glow3; animation-duration: 5s; animation-delay: 1.5; animation-iteration-count: infinite;
 }
 
 .Image3 {position: relative; top: 675px;
@@ -104,6 +134,8 @@ svg {width: 10%; height: 10%;
          box-shadow: 5px 5px 15px black;
          border: solid 3px; border-radius: 20%;
 }
+
+.Image3:hover {animation-name: glow3; animation-duration: 5s; animation-delay: 1.5; animation-iteration-count: infinite;}
 
 .Text_col {position: relative;
            top: 675px; font-size: 15px; width: 250px;
@@ -123,11 +155,15 @@ svg {width: 10%; height: 10%;
               color: white;
 }
 
+.Text_movies:hover {color: blue;}
+
 .Movies {position: relative; top: 775px;
          height: 40%; width: 40%;
          box-shadow: 5px 5px 15px black;
-         border: solid 3px; border-radius: 20%;
+         border: solid 3px black; border-radius: 20%;
 }
+
+.Movies:hover {border: solid 3px blue;}
 
 .Start_tech {position: relative;
              top: 775px; font-size: 15px; width: 250px;
@@ -137,10 +173,11 @@ svg {width: 10%; height: 10%;
 
 .Title_tech {position: relative; top: 875px;
              font-size: 20px; color: #1390d8;
-             box-shadow: 0px 0px 15px cyan;
-             text-decoration: underline; border: solid 2px;
+             box-shadow: 0px 0px 15px #1390d8;
+             border: solid 2px;
              border-radius: 50%;
              background: linear-gradient(to left, #166d83, #000000);
+             animation-name: glow4; animation-duration: 5s; animation-delay: 1.5; animation-iteration-count: infinite;
 }
 
 .Image4 {position: relative; top: 875px;
@@ -148,6 +185,8 @@ svg {width: 10%; height: 10%;
          box-shadow: 5px 5px 15px black;
          border: solid 3px; border-radius: 20%;
 }
+
+.Image4:hover {animation-name: glow4; animation-duration: 5s; animation-delay: 1.5; animation-iteration-count: infinite;}
 
 .Text_tech {position: relative;
             top: 875px; font-size: 15px; width: 250px;
@@ -172,7 +211,7 @@ svg {width: 10%; height: 10%;
 
 /*Computer*/
 @media screen and (min-width: 928px){
-   html {height: 955%;}
+   html {height: 905%;}
    svg {height: 4%; width: 4%; position: fixed; left: 105px}
    .Dark_Theme {height: 4%; width: 4%; position: fixed; left: 205px}
    .Title {top: 275px; font-size: 20px;}
@@ -197,7 +236,7 @@ svg {width: 10%; height: 10%;
    .Thanks {font-size: 15px; width: 500px; top: 875px;}
    .Info {font-size: 15px; width: 500px; top: 975px;}
    #b1 {font-size: 20px;}
-   #c1 {font-size: 20px;}
+   #c1 {font-size: 25px;}
 }
 
 /*End*/
