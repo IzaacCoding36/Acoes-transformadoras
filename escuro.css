@@ -42,10 +42,11 @@ svg {width: 10%; height: 10%;
      border: solid 3px #e7e7e7e7;
      border-radius: 5px;
      z-index: 1;
+     transition: background 0.3s, border 0.3s;
      animation-name: glow1; animation-duration: 5s; animation-delay: 1.5; animation-iteration-count: infinite;
 }
 
-svg:hover {background: white; border: solid 3px black;}
+svg:hover {background: white; border: solid 3px black; transition: background 0.3s, border 0.3s;}
 
 .Tema_Escuro {color: #140d66;
 }
@@ -153,18 +154,19 @@ svg:hover {background: white; border: solid 3px black;}
 .Texto_filmes {position: relative;
                top: 775px; font-size: 20px; width: 250px;
                text-align: center; text-decoration: underline;
-               color: white;
+               color: white; transition: color 0.3s;
 }
 
-.Texto_filmes:hover {color: blue}
+.Texto_filmes:hover {color: blue; transition: color 0.3s;}
 
 .Filmes {position: relative; top: 775px;
          height: 40%; width: 40%;
          box-shadow: 5px 5px 15px black;
          border: solid 3px black; border-radius: 20%;
+         transition: color 0.3s;
 }
 
-.Filmes:hover {border: solid 3px blue;}
+.Filmes:hover {border: solid 3px blue; transition: color 0.3s;}
 
 .Inicio_tech {position: relative;
               top: 775px; font-size: 15px; width: 250px;

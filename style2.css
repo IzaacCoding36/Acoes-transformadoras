@@ -40,10 +40,11 @@ svg {width: 10%; height: 10%;
      border: solid 3px black;
      border-radius: 5px;
      z-index: 1;
+     transition: background 0.3s, border 0.3s;
      animation-name: glow1; animation-duration: 5s; animation-delay: 1.5; animation-iteration-count: infinite;
 }
 
-svg:hover {background: black; border: solid 3px white;}
+svg:hover {background: black; border: solid 3px white; transition: background 0.3s, border 0.3s;}
 
 .Light_Theme {color:#b38b11;
 }
@@ -146,17 +147,19 @@ svg:hover {background: black; border: solid 3px white;}
               top: 775px; font-size: 20px; width: 250px;
               color: black;
               text-align: center; text-decoration: underline;
+              transition: color 0.3s;
 }
 
-.Text_movies:hover {color: blue;}
+.Text_movies:hover {color: blue; transition: color 0.3s;}
 
 .Movies {position: relative; top: 775px;
          height: 40%; width: 40%;
          box-shadow: 5px 5px 15px black;
          border: solid 3px black; border-radius: 20%;
+         transition: color 0.3s;
 }
 
-.Movies:hover {border: solid 3px blue;}
+.Movies:hover {border: solid 3px blue; transition: color 0.3s;}
 
 .Start_tech {position: relative;
              top: 775px; font-size: 15px; width: 250px;

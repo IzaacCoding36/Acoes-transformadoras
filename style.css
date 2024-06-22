@@ -3,6 +3,7 @@
 /*Mobile*/
 html {background: linear-gradient(to left top, #e7e7e7e7, #4f3c59);
       font-family: 'Poppins', sans-serif;
+      cursor: default;
       display: flex;}
 
 @keyframes glow1 { 0% {box-shadow: 0px 0px 15px green;}
@@ -40,10 +41,11 @@ svg {width: 10%; height: 10%;
      border: solid 3px black;
      border-radius: 5px;
      z-index: 1;
+     transition: background 0.3s, border 0.3s;
      animation-name: glow1; animation-duration: 5s; animation-delay: 1.5; animation-iteration-count: infinite;
 }
 
-svg:hover {background: black; border: solid 3px white;}
+svg:hover {background: black; border: solid 3px white; transition: background 0.3s, border 0.3s;}
 
 .Tema_Claro {color:#b38b11;
 }
@@ -145,19 +147,20 @@ svg:hover {background: black; border: solid 3px white;}
 .Texto_filmes {position: relative;
                top: 775px; font-size: 20px; width: 250px;
                text-align: center; text-decoration: underline;
-               color: black;
+               color: black; transition: color 0.3s;
 }
 
-.Texto_filmes:hover {color: blue;}
+.Texto_filmes:hover {color: blue; transition: color 0.3s;}
 
 .Filmes {position: relative; top: 775px;
          height: 40%; width: 40%;
          color: black;
          box-shadow: 5px 5px 15px black;
          border: solid 3px black; border-radius: 20%;
+         transition: color 0.3s;
 }
 
-.Filmes:hover {border: solid 3px blue;}
+.Filmes:hover {border: solid 3px blue; transition: color 0.3s;}
 
 .Inicio_tech {position: relative;
               top: 775px; font-size: 15px; width: 250px;
