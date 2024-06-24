@@ -5,6 +5,7 @@
 /*Mobile*/
 html {background: linear-gradient(to left top, #000000, #4f3c59);
       font-family: 'Poppins', sans-serif;
+      font-weight: bold;
       display: flex;}
 
 @keyframes glow1 { 0% {box-shadow: 0px 0px 15px green;}
@@ -61,6 +62,7 @@ svg:hover {background: white; border: solid 3px black; transition: background 0.
 .Titulo {position: relative; top: 275px; 
          font-size: 20px; text-decoration: underline;
          color: white;
+         text-shadow: 0px 0px 15px lime;
 }
 
 .Apresentacao {position: relative;
