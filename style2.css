@@ -1,7 +1,6 @@
-/*Start*/
-
 /*Mobile*/
 html {background: linear-gradient(to left top, #e7e7e7e7, #4f3c59);
+      background-color: #4f3c59;
       font-family: 'Poppins', sans-serif;
       font-weight: bold;
       display: flex;}

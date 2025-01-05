@@ -1,9 +1,8 @@
 /*Dark Theme*/
 
-/*Start*/
-
 /*Mobile*/
 html {background: linear-gradient(to left top, #000000, #4f3c59);
+      background-color: #4f3c59;
       font-family: 'Poppins', sans-serif;
       font-weight: bold;
       display: flex;}
