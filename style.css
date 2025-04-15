@@ -1,222 +1,276 @@
 /*Mobile*/
-html {background: linear-gradient(to left top, #e7e7e7e7, #4f3c59);
+
+html {background: linear-gradient(90deg, #4f3c59 0%, #e7e7e7e7 50%, #4f3c59 100%);
       background-color: #4f3c59;
       font-family: 'Poppins', sans-serif;
       cursor: default;
       font-weight: bold;
+      transition: filter 3s;
       display: flex;}
 
-@keyframes glow1 { 0% {box-shadow: 0px 0px 15px green;}
-                   50% {box-shadow: 0px 0px 15px lime;}
-                   100% {box-shadow: 0px 0px 15px green;}
+@keyframes glow1 { 0% {box-shadow: 0px 0px 15px green; color: green;}
+                   50% {box-shadow: 0px 0px 15px lime; color: lime;}
+                   100% {box-shadow: 0px 0px 15px green; color: green;}
 }
 
-@keyframes glow2 { 0% {box-shadow: 0px 0px 15px #b38b11;}
-                   50% {box-shadow: 0px 0px 15px yellow;}
-                   100% {box-shadow: 0px 0px 15px #b38b11;}
+@keyframes glow2 { 0% {box-shadow: 0px 0px 15px #b38b11; color: #b38b11;}
+                   50% {box-shadow: 0px 0px 15px yellow; color: yellow;}
+                   100% {box-shadow: 0px 0px 15px #b38b11; color: #b38b11;}
 }
 
-@keyframes glow3 { 0% {box-shadow: 0px 0px 15px #831616;}
-                   50% {box-shadow: 0px 0px 15px red;}
-                   100% {box-shadow: 0px 0px 15px #831616;}
+@keyframes glow3 { 0% {box-shadow: 0px 0px 15px #b14848; color: #b14848;}
+                   50% {box-shadow: 0px 0px 15px red; color: red;}
+                   100% {box-shadow: 0px 0px 15px #b14848; color: #b14848;}
 }
 
-@keyframes glow4 { 0% {box-shadow: 0px 0px 15px #1390d8;}
-                   50% {box-shadow: 0px 0px 15px cyan;}
-                   100% {box-shadow: 0px 0px 15px #1390d8;}
+@keyframes glow4 { 0% {box-shadow: 0px 0px 15px #1390d8; color: #1390d8;}
+                   50% {box-shadow: 0px 0px 15px cyan; color: cyan;}
+                   100% {box-shadow: 0px 0px 15px #1390d8; color: #1390d8;}
 }
 
-body {margin: 0; padding: 0;
+@keyframes pulse1 {
+    0%, 100% { box-shadow: 0 0 5px lime; }
+    50% { box-shadow: 0 0 15px lime; }
+}
+
+@keyframes pulse2 {
+    0%, 100% { box-shadow: 0 0 5px yellow; }
+    50% { box-shadow: 0 0 15px yellow; }
+}
+
+@keyframes pulse3 {
+    0%, 100% { box-shadow: 0 0 5px red; }
+    50% { box-shadow: 0 0 15px red; }
+}
+
+@keyframes pulse4 {
+    0%, 100% { box-shadow: 0 0 5px cyan; }
+    50% { box-shadow: 0 0 15px cyan; }
+}
+
+body {margin: 0; 
+      padding: 0;
       background-image: url(Imagens/Principal.png);
-      background-size: 65%;
+      background-size: 350px;
       background-position: top;
-      background-repeat: no-repeat;
-}
+      background-repeat: no-repeat;}
 
-a {text-decoration: none;}
+.dropbtn {background-color: #e7e7e7e7;
+          color: purple;
+          padding: 5px;
+          position: relative;
+          top: 5px;
+          font-size: 13px;
+          font-weight: bold;
+          box-shadow: 0px 2px 5px magenta, -2px 0px 5px purple;
+          transition: background-color 0.3s, box-shadow 0.3s;
+          border: outset 2px magenta;}
 
-svg {width: 10%; height: 10%;
-     background: linear-gradient(to left, #286e3a, #000000);
-     box-shadow: 0px 0px 15px green;
-     border: solid 3px black;
-     border-radius: 5px;
-     z-index: 1;
-     transition: background 0.3s, border 0.3s;
-     animation-name: glow1; animation-duration: 5s; animation-delay: 1.5; animation-iteration-count: infinite;
-}
+.dropdown {position: relative;
+           display: inline-block;
+           cursor: default;}
 
-svg:hover {background: black; border: solid 3px white; transition: background 0.3s, border 0.3s;}
+.dropdown-content {display: none;
+                   position: absolute;
+                   top: 33px;
+                   background-color: #e7e7e7e7;
+                   min-width: 100px;
+                   box-shadow: 0px 2px 5px magenta, -2px 0px 5px purple;
+                   z-index: 1;}
 
-.Tema_Claro {color:#b38b11;
-}
+.dropdown-content a {color: purple;
+                     padding: 1px 1px;
+                     font-size: 13px;
+                     font-weight: bold;
+                     text-decoration: none;
+                     border: solid 1px magenta;
+                     display: block;
+                     transition: background-color 0.3s, box-shadow 0.3s;}
 
-.Linguagem {color:#E7E7E7;
-}
+.dropdown-content a:hover {background-color: purple; color: white; text-shadow: 0px 0px 10px white; transition: background-color 0.3s, box-shadow 0.3s;}
 
-.botao_superior {max-width: 100%;
-                 position: relative; right: 25px;
-}
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: purple; color: white; text-shadow: 0px 0px 10px white; transition: background-color 0.3s, box-shadow 0.3s;}
 
 .Titulo {position: relative; top: 275px; 
          font-size: 20px; text-decoration: underline;
-         text-shadow: 0px 0px 15px lime;
-}
+         text-shadow: 0px 0px 5px green, 0px 0px 10px lime, 0px 0px 15px lime;}
 
 .Apresentacao {position: relative;
                top: 275px; 
                font-size: 15px; width: 250px;
-               text-align: center;
-}
+               text-align: center;}
 
-#a1 {color: lime;}
-#a2 {color: yellow;}
-#a3 {color: red;}
-#a4 {color: cyan;}
+#a1 {color: lime; border: outset 2px lime; text-shadow: 0px 0px 5px black; background-color: #0153056a; width: 150px; border-radius: 50px;}
+#a2 {color: yellow; border: outset 2px yellow; text-shadow: 0px 0px 5px black; background-color: #534f016a; width: 150px; border-radius: 50px;}
+#a3 {color: red; border: outset 2px red; text-shadow: 0px 0px 5px black; background-color: #5302016a; width: 150px; border-radius: 50px;}
+#a4 {color: cyan; border: outset 2px cyan; text-shadow: 0px 0px 5px black; background-color: #01534d6a; width: 150px; border-radius: 50px;} 
 
-.Titulo_sus {position: relative; top: 475px; 
+.Linha_sus {box-shadow: 0px 0px 5px lime;
+            background: linear-gradient(to right, transparent, lime, transparent);
+            border: none;
+            position: relative; top: 475px;
+            height: 1px;
+            animation: pulse1 2s infinite;}
+
+.Titulo_sus {position: relative; top: 475px;
              font-size: 20px; 
              color: green;
              box-shadow: 0px 0px 15px green;
-             border: solid 2px;
+             text-shadow: 0px 0px 5px #286e3a;
              border-radius: 50%;
+             border: outset 2px green;
              background: linear-gradient(to left, #286e3a, #000000);
-             animation-name: glow1; animation-duration: 5s; animation-delay: 1.5; animation-iteration-count: infinite;
-}
+             animation-name: glow1; animation-duration: 5s; animation-delay: 1.5; animation-iteration-count: infinite;}
 
 .Imagem {position: relative; top: 475px; 
          height: 40%; width: 40%;
          box-shadow: 5px 5px 15px black;
-         border: solid 3px; border-radius: 20%;
-}
+         transition: animation 1s;
+         border: outset 3px black; border-radius: 20%;}
 
 .Imagem:hover {animation-name: glow1; animation-duration: 5s; animation-delay: 1.5; animation-iteration-count: infinite;}
 
 .Texto_sus {position: relative;
             top: 475px; font-size: 15px; width: 250px;
-            text-align: center;
-}
+            text-align: center;}
+
+.Linha_edu {box-shadow: 0px 0px 5px yellow;
+            background: linear-gradient(to right, transparent, yellow, transparent);
+            border: none;
+            position: relative; top: 575px;
+            height: 1px;
+            animation: pulse2 2s infinite;}
 
 .Titulo_edu {position: relative; top: 575px; 
-             font-size: 20px; color: #b38b11;
+             font-size: 20px;
+             color: #b38b11;
              box-shadow: 0px 0px 15px #b38b11;
-             border: solid 2px;
+             text-shadow: 0px 0px 5px #745e0c;
+             border: outset 2px #b38b11;
              border-radius: 50%;
              background: linear-gradient(to left, #745e0c, #000000);
-             animation-name: glow2; animation-duration: 5s; animation-delay: 1.5; animation-iteration-count: infinite;
-}
+             animation-name: glow2; animation-duration: 5s; animation-delay: 1.5; animation-iteration-count: infinite;}
 
 .Imagem2 {position: relative; top: 575px; 
           height: 40%; width: 40%;
           box-shadow: 5px 5px 15px black;
-          border: solid 3px; border-radius: 20%;
-}
+          border: outset 3px black; border-radius: 20%;}
 
 .Imagem2:hover {animation-name: glow2; animation-duration: 5s; animation-delay: 1.5; animation-iteration-count: infinite;}
 
 .Texto_edu {position: relative;
             top: 575px; font-size: 15px; width: 250px;
-            text-align: center;
-}
+            text-align: center;}
+
+.Linha_col {box-shadow: 0px 0px 5px red;
+            background: linear-gradient(to right, transparent, red, transparent);
+            border: none;
+            position: relative; top: 675px;
+            height: 1px;
+            animation: pulse3 2s infinite;}
 
 .Titulo_col {position: relative; top: 675px;
-             font-size: 20px; color: #b14848;
-             box-shadow: 0px 0px 15px #831616;
-             border: solid 2px;
+             font-size: 20px; 
+             color: #b14848;
+             box-shadow: 0px 0px 15px #b14848;
+             text-shadow: 0px 0px 5px #831616;
+             border: outset 2px #b14848;
              border-radius: 50%;
              background: linear-gradient(to left, #831616, #000000);
-             animation-name: glow3; animation-duration: 5s; animation-delay: 1.5; animation-iteration-count: infinite;
-}
+             animation-name: glow3; animation-duration: 5s; animation-delay: 1.5; animation-iteration-count: infinite;}
 
 .Imagem3 {position: relative; top: 675px;
           height: 40%; width: 40%;
           box-shadow: 5px 5px 15px black;
-          border: solid 3px; border-radius: 20%;
-}
+          border: outset 3px black; border-radius: 20%;}
 
 .Imagem3:hover {animation-name: glow3; animation-duration: 5s; animation-delay: 1.5; animation-iteration-count: infinite;}
 
 .Texto_col {position: relative;
             top: 675px; font-size: 15px; width: 250px;
-            text-align: center;
-}
+            text-align: center;}
 
 .Recomendacoes {position: relative;
                 top: 775px; font-size: 15px; width: 250px;
-                text-align: center;
-}
+                text-align: center;}
 
 .Texto_filmes {position: relative;
                top: 775px; font-size: 20px; width: 250px;
                text-align: center; text-decoration: underline;
-               color: black; transition: color 0.3s;
-}
+               color: black; transition: color 0.3s, text-shadow 0.3s;}
 
-.Texto_filmes:hover {color: blue; transition: color 0.3s;}
+.Texto_filmes:hover {color: blue; text-shadow: 0px 0px 5px cyan; transition: color 0.3s, text-shadow 0.3s;}
 
 .Filmes {position: relative; top: 775px;
          height: 40%; width: 40%;
          color: black;
          box-shadow: 5px 5px 15px black;
-         border: solid 3px black; border-radius: 20%;
-         transition: color 0.3s;
-}
+         border: outset 3px black; border-radius: 20%;
+         transition: color 0.3s, box-shadow 0.3s;}
 
-.Filmes:hover {border: solid 3px blue; transition: color 0.3s;}
+.Filmes:hover {border: outset 3px blue; box-shadow: 5px 5px 15px blue; transition: border 0.3s, box-shadow 0.3s;}
 
 .Inicio_tech {position: relative;
               top: 775px; font-size: 15px; width: 250px;
-              text-align: center;
-}
+              text-align: center;}
+
+.Linha_tech {box-shadow: 0px 0px 5px cyan;
+             background: linear-gradient(to right, transparent, cyan, transparent);
+             border: none;
+             position: relative; top: 875px;
+             height: 1px;
+             animation: pulse4 2s infinite;}
 
 .Titulo_tech {position: relative; top: 875px;
               font-size: 20px; color: #1390d8;
               box-shadow: 0px 0px 15px #1390d8;
-              border: solid 2px;
+              text-shadow: 0px 0px 5px #166d83;
+              border: outset 2px #1390d8;
               border-radius: 50%;
               background: linear-gradient(to left, #166d83, #000000);
-              animation-name: glow4; animation-duration: 5s; animation-delay: 1.5; animation-iteration-count: infinite;
-}
+              animation-name: glow4; animation-duration: 5s; animation-delay: 1.5; animation-iteration-count: infinite;}
 
 .Imagem4 {position: relative; top: 875px;
           height: 40%; width: 40%;
           box-shadow: 5px 5px 15px black;
-          border: solid 3px; border-radius: 20%;
-}
+          border: outset 3px black; border-radius: 20%;}
 
 .Imagem4:hover {animation-name: glow4; animation-duration: 5s; animation-delay: 1.5; animation-iteration-count: infinite;}
 
 .Texto_tech {position: relative;
              top: 875px; font-size: 15px; width: 250px;
-             text-align: center;
-}
+             text-align: center;}
 
-#b1 {color: cyan; text-decoration: underline;
+#b1 {color: cyan;
+     border: outset 2px cyan;
+     text-shadow: 0px 0px 5px black;
+     background-color: #01534d6a;
+     padding: 10px;
      font-size: 20px;}
 
 .Agradecimentos {position: relative;
                  top: 975px; font-size: 15px; width: 250px;
-                 text-align: center;
-}
+                 text-align: center;}
 
 .Info {position: relative;
        top: 1175px; font-size: 15px; width: 250px;
-       text-align: center;
-}
+       text-align: center;}
 
 /*Computador*/
 @media screen and (min-width: 928px){
-   html {height: 905%;}
-   svg {height: 4%; width: 4%; position: fixed; left: 105px}
-   .Tema_Claro {height: 4%; width: 4%; position: fixed; left: 205px}
    .Titulo {top: 275px; font-size: 20px;}
-   body {background-size: 25%;}
    .Apresentacao {font-size: 15px; width: 500px; top: 275px;}
+   .Linha_sus {top: 375px;}
    .Titulo_sus {font-size: 20px; top: 375px;}
    .Imagem {top: 375px; width: 25%; height: 25%}
    .Texto_sus {font-size: 15px; width: 500px; top: 375px;}
+   .Linha_edu {top: 475px;}
    .Titulo_edu {font-size: 20px; top: 475px;}
    .Imagem2 {top: 475px; width: 25%; height: 25%}
    .Texto_edu {font-size: 15px; width: 500px; top: 475px;}
+   .Linha_col {top: 575px;}
    .Titulo_col {font-size: 20px; top: 575px;}
    .Imagem3 {top: 575px; width: 25%; height: 25%}
    .Texto_col {font-size: 15px; width: 500px; top: 575px;}
@@ -224,13 +278,12 @@ svg:hover {background: black; border: solid 3px white; transition: background 0.
    .Texto_filmes {font-size: 20px; width: 500px; top: 675px;}
    .Filmes {top: 675px; width: 25%; height: 25%}
    .Inicio_tech {font-size: 15px; width: 500px; top: 775px;}
+   .Linha_tech {top: 875px;}
    .Titulo_tech {font-size: 20px; top: 875px;}
    .Imagem4 {top: 875px; width: 25%; height: 25%}
    .Texto_tech {font-size: 15px; width: 500px; top: 875px}
    .Agradecimentos {font-size: 15px; width: 500px; top: 875px;}
    .Info {font-size: 15px; width: 500px; top: 975px;}
-   #b1 {font-size: 20px;}
+   #b1 {font-size: 20px; border-radius: 50px;}
    #c1 {font-size: 25px;}
 }
-
-/*Fim*/

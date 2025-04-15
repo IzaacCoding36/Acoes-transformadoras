@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="edge">
   <meta name="author" content="IzaacCoding36">
-  <meta name="viewport" content="width=device-width, initial-scale= 1.0"><meta name="description" content="Esse site apresenta debates sobre ações sociais que trazem grande impacto em nossas vidas">
+  <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+  <meta name="description" content="Esse site apresenta debates sobre ações sociais que trazem grande impacto em nossas vidas">
   <meta name="keywords" content="HTML, CSS, JavaScript, Projeto, Ações">
   <link rel="stylesheet" href="escuro.css">
   <link rel="shortcut icon" type="image/jpg" href="Imagens/favicon.ico"/>
@@ -20,15 +21,28 @@
   </head>
     <body align="center">
       <center>
-        <div align="right" class="botao_superior">
-          <a href="index.html">
-          <svg class="Tema_Escuro" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" height="1.5em" width="1.5em"><path fill="currentColor" d="M24 42q-7.5 0-12.75-5.25T6 24q0-6.75 3.975-11.45Q13.95 7.85 20.4 6.5q2.05-.4 2.8.7t-.05 3q-.45 1.15-.7 2.35-.25 1.2-.25 2.45 0 4.5 3.15 7.65Q28.5 25.8 33 25.8q1.25 0 2.425-.225 1.175-.225 2.275-.625 2.15-.8 3.2.075 1.05.875.55 2.975-1.35 6.05-6.05 10.025Q30.7 42 24 42Z"/>
-          </svg>
-          </a>
-          <a href="Dark_Theme.html">
-          <svg class="Linguagem" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" height="1.5em" width="1.5em"><path fill="currentColor" d="M24 44q-4.2 0-7.85-1.575Q12.5 40.85 9.8 38.15q-2.7-2.7-4.25-6.375Q4 28.1 4 23.9t1.55-7.825Q7.1 12.45 9.8 9.75t6.35-4.225Q19.8 4 24 4q4.2 0 7.85 1.525Q35.5 7.05 38.2 9.75q2.7 2.7 4.25 6.325Q44 19.7 44 23.9t-1.55 7.875Q40.9 35.45 38.2 38.15t-6.35 4.275Q28.2 44 24 44Zm7.9-27.5h7.5q-1.65-3.45-4.525-5.75Q32 8.45 28.25 7.5q1.25 1.85 2.125 4t1.525 5Zm-12.7 0h9.7q-.55-2.65-1.85-5.125T24 7q-1.6 1.35-2.7 3.55-1.1 2.2-2.1 5.95ZM7.6 28.45h7.95q-.15-1.35-.175-2.425-.025-1.075-.025-2.125 0-1.25.05-2.225.05-.975.2-2.175h-8q-.35 1.2-.475 2.15T7 23.9q0 1.3.125 2.325.125 1.025.475 2.225ZM19.75 40.5q-1.25-1.9-2.15-4.1-.9-2.2-1.5-4.95H8.6Q10.5 35 13 37.025q2.5 2.025 6.75 3.475ZM8.6 16.5h7.55q.55-2.7 1.4-4.825.85-2.125 2.15-4.125-3.75.95-6.55 3.2T8.6 16.5ZM24 41.1q1.75-1.8 2.925-4.125Q28.1 34.65 28.85 31.45H19.2q.7 3 1.875 5.4Q22.25 39.25 24 41.1Zm-5.35-12.65H29.4q.2-1.55.25-2.525.05-.975.05-2.025 0-1-.05-1.925T29.4 19.5H18.65q-.2 1.55-.25 2.475-.05.925-.05 1.925 0 1.05.05 2.025.05.975.25 2.525Zm9.65 12q3.6-1.15 6.475-3.45 2.875-2.3 4.625-5.55h-7.45q-.65 2.7-1.525 4.9-.875 2.2-2.125 4.1Zm4.1-12h8q.35-1.2.475-2.225Q41 25.2 41 23.9q0-1.3-.125-2.25T40.4 19.5h-7.95q.15 1.75.2 2.675.05.925.05 1.725 0 1.1-.075 2.075-.075.975-.225 2.475Z"/>
-          </svg>
-          </a>
+        <div class="dropdown">
+          <button class="dropbtn">Linguagens</button>
+          <div class="dropdown-content">
+            <a class="pt-br">Português do Brasil</a>
+            <a href="Dark_Theme.html">English</a>
+            <a class="maislang">Mais linguagens</a>
+          </div>
+        </div>
+          <div class="dropdown">
+            <button class="dropbtn">Filtros</button>
+            <div class="dropdown-content">
+              <a class="filtro">Normal</a>
+              <a class="filtro2">Sépia</a>
+              <a class="filtro3">Cinza</a>
+            </div>
+          </div>
+        <div class="dropdown">
+          <button class="dropbtn">Temas</button>
+          <div class="dropdown-content">
+            <a href="index.html">Claro</a>
+            <a class="tema">Escuro</a>
+          </div>
         </div>
         <div align="bottom">
           <h1 class="Titulo" id="c1">Ações que Transformam o Mundo</h1>
@@ -43,7 +57,9 @@
         </div>
         <section class="Sustentabilidade">
         <div align="bottom">
+          <hr class="Linha_sus">
           <h1 class="Titulo_sus">Sustentabilidade</h1>
+          <hr class="Linha_sus">
           <img class="Imagem" alt="Sustentabilidade" src="Imagens/Sustentabilidade2.png">
           <p class="Texto_sus">O que claramente podemos citar aqui são ações sustentáveis que, de fato, transformam não só o mundo, mas sim quem somos.</p>
           <p class="Texto_sus">Jogar o lixo no lugar correto, cuidar das árvores e plantas, e até mesmo plantá-las, reflete em um ambiente muito melhor para o ser humano conviver.</p>
@@ -52,7 +68,9 @@
         </section>
         <section class="Educação">
         <div align="bottom">
+          <hr class="Linha_edu">
           <h1 class="Titulo_edu">Educação</h1>
+          <hr class="Linha_edu">
           <img class="Imagem2" alt="Educação" src="Imagens/Educação2.png">
           <p class="Texto_edu">Mais uma das ações que são muito importantes para o nosso futuro é a educação, pois é a educação que modela o que nós planejamos ser futuramente, e obviamente, impulsionar a nossa produtividade para adentrar o mundo do trabalho.</p>
           <p class="Texto_edu">Mas não é só para trabalhar que nós vamos para a escola ou qualquer outra instituição de ensino, nós também aprendemos a conviver com o mundo, com a sua história, com seus mecanismos, por isso que muitas vezes ensinar alguém a algo pode ser algo transformador, pois você está transmitindo uma informação a alguêm que provavelmente a utilizará em algum momento da vida.</p>
@@ -61,7 +79,9 @@
         </section>
         <section class="Coletividade">
         <div align="bottom">
+          <hr class="Linha_col">
           <h1 class="Titulo_col">Coletividade</h1>
+          <hr class="Linha_col">
           <img class="Imagem3" alt="Coletividade" src="Imagens/Coletividade2.png">
           <p class="Texto_col">O mundo não seria o que é hoje sem agirmos em conjunto, sim, mais um tópico que trata sobre a relevância de transformar o nosso mundo é a coletividade, pois várias pessoas investindo em um projeto ou uma ação boa é o essencial para gerar mudanças em grande escala.</p>
           <p class="Texto_col">Esse é um assunto muito importante para tratarmos, pois a atualidade está se tornando cada vez mais induvidualista, onde as pessoas buscam cada vez menos agir ou participar de grupos e comunidades, isso traz alguns malefícios para a sociedade em geral como desigualdades, falta de aceitação, baixa estima, dentre outros problemas psicológicos e sociais.</p>
@@ -84,7 +104,9 @@
         </section>
         <section class="Tecnologia">
         <div align="Bottom">
+          <hr class="Linha_tech">
           <h1 class="Titulo_tech">Tecnologia</h1>
+          <hr class="Linha_tech">
           <img class="Imagem4" alt="Tecnologia" src="Imagens/Tecnologia2.png">
           <p class="Texto_tech">A tecnologia é a nossa ferramenta para fazer as mudanças acontecerem. O desenvolvimento e a evolução do nosso conhecimento fornece uma maior oportunidade de mudarmos o mundo e o nosso futuro.</p>
           <p class="Texto_tech">Por isso a tecnologia é o que irá transformar o nosso mundo, pois com a tecnologia nós podemos desenvolver novas formas de preservar fontes naturais e nossa vida pessoal, tudo em um momento tão necessário como agora.</p>
@@ -103,4 +125,5 @@
         </div>
       </center>
     </body>
+    <script src="./JavaScript/botoes.js"></script>
 </html>
