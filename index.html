@@ -1,129 +1,200 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
   <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="edge">
-  <meta name="author" content="IzaacCoding36">
-  <meta name="viewport" content="width=device-width, initial-scale= 1.0">
-  <meta name="description" content="Esse site apresenta debates sobre ações sociais que trazem grande impacto em nossas vidas">
-  <meta name="keywords" content="HTML, CSS, JavaScript, Projeto, Ações">
-  <link rel="stylesheet" href="style.css">
-  <link rel="shortcut icon" type="image/jpg" href="Imagens/favicon.ico"/>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-  <script>
-    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-  </script>
-  <script defer src="/_vercel/insights/script.js"></script>
-  <base href="index.html">
-  <title>Ações Transformadoras</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="IzaacCoding36">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Esse site apresenta debates sobre ações sociais que trazem grande impacto em nossas vidas">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Projeto, Ações, Sustentabilidade, Educação, Coletividade, Tecnologia">
+    <link rel="stylesheet" href="style-modern.css">
+    <link rel="shortcut icon" type="image/ico" href="Imagens/favicon.ico"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
+    <title>Ações Transformadoras</title>
   </head>
-    <body align="center">
-      <center>
+  <body>
+      <nav class="site-nav">
         <div class="dropdown">
-          <button class="dropbtn">Linguagens</button>
-          <div class="dropdown-content">
-            <a class="pt-br">Português do Brasil</a>
-            <a href="English.html">English</a>
-            <a class="maislang">Mais linguagens</a>
+          <button class="dropbtn" aria-haspopup="true" aria-expanded="false">
+            <span>Linguagens</span>
+            <span class="dropdown-arrow">▼</span>
+          </button>
+          <div class="dropdown-content" role="menu">
+            <button class="pt-br" role="menuitem">Português do Brasil</button>
+            <a href="English.html" role="menuitem">English</a>
+            <button class="maislang" role="menuitem">Mais linguagens</button>
           </div>
         </div>
-          <div class="dropdown">
-            <button class="dropbtn">Filtros</button>
-            <div class="dropdown-content">
-              <a class="filtro">Normal</a>
-              <a class="filtro2">Sépia</a>
-              <a class="filtro3">Cinza</a>
+        <div class="dropdown">
+          <button class="dropbtn" aria-haspopup="true" aria-expanded="false">
+            <span>Filtros</span>
+            <span class="dropdown-arrow">▼</span>
+          </button>
+          <div class="dropdown-content" role="menu">
+            <button class="filtro" role="menuitem">Normal</button>
+            <button class="filtro2" role="menuitem">Sépia</button>
+            <button class="filtro3" role="menuitem">Cinza</button>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn" aria-haspopup="true" aria-expanded="false">
+            <span>Temas</span>
+            <span class="dropdown-arrow">▼</span>
+          </button>
+          <div class="dropdown-content" role="menu">
+            <button class="tema" role="menuitem">Claro</button>
+            <a href="Tema_Escuro.html" role="menuitem">Escuro</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main-content">
+      <section class="hero-section">
+        <div class="hero-background"></div>
+        <div class="hero-content">
+          <h1 class="main-title">Ações que Transformam o Mundo</h1>
+          <div class="intro-text">
+            <p>Olá, Bem-vindo a esta página! Aqui você verá alguns assuntos que de fato impactam no nosso dia-a-dia, e que transformarão o futuro em que viveremos. Para isso, separei cada parte desse assunto em tópicos que são muito importantes.</p>
+            <p>Como pode perceber, existe um círculo no topo desta página que representa os 4 tópicos que serão falados aqui, cada um desses tópicos representam temas específicos como:</p>
+          </div>
+          
+          <div class="topic-badges">
+            <span class="topic-badge sustainability">Sustentabilidade</span>
+            <span class="topic-badge education">Educação</span>
+            <span class="topic-badge collectivity">Coletividade</span>
+            <span class="topic-badge technology">Tecnologia</span>
+          </div>
+          
+          <p class="navigation-info">No canto superior direito você pode alterar a linguagem ou o tema para uma maior acessibilidade de leitura.</p>
+          <p class="cta-text">Enfim, confira o conteúdo abaixo.</p>
+        </div>
+      </section>
+      <section class="content-section sustainability">
+        <div class="section-container">
+          <div class="section-header">
+            <hr class="section-line">
+            <h2 class="section-title">Sustentabilidade</h2>
+            <hr class="section-line">
+          </div>
+          <div class="section-content">
+            <div class="image-container">
+              <img class="section-image" alt="Sustentabilidade" src="Imagens/Sustentabilidade2.png" loading="lazy">
+            </div>
+            <div class="text-content">
+              <p>O que claramente podemos citar aqui são ações sustentáveis que, de fato, transformam não só o mundo, mas sim quem somos.</p>
+              <p>Jogar o lixo no lugar correto, cuidar das árvores e plantas, e até mesmo plantá-las, reflete em um ambiente muito melhor para o ser humano conviver.</p>
+              <p>É claro que ações que transformam o mundo podem ser sustentáveis, isso é o que mais precisamos no momento, em muitos lugares do mundo vemos poluição, destruição ambiental, queimadas e devastação, e a sustentabilidade é a chave para termos um futuro potencialmente melhor. Você também faz parte disso, aliás, todos nós fazemos, a natureza nos beneficia com seus recursos naturais, por que não podemos contribuir com ela também? Não é mesmo?</p>
             </div>
           </div>
-        <div class="dropdown">
-          <button class="dropbtn">Temas</button>
-          <div class="dropdown-content">
-            <a class="tema">Claro</a>
-            <a href="Tema_Escuro.html">Escuro</a>
+        </div>
+      </section>
+
+      <section class="content-section education">
+        <div class="section-container">
+          <div class="section-header">
+            <hr class="section-line">
+            <h2 class="section-title">Educação</h2>
+            <hr class="section-line">
+          </div>
+          <div class="section-content">
+            <div class="image-container">
+              <img class="section-image" alt="Educação" src="Imagens/Educação2.png" loading="lazy">
+            </div>
+            <div class="text-content">
+              <p>Mais uma das ações que são muito importantes para o nosso futuro é a educação, pois é a educação que modela o que nós planejamos ser futuramente, e obviamente, impulsionar a nossa produtividade para adentrar o mundo do trabalho.</p>
+              <p>Mas não é só para trabalhar que nós vamos para a escola ou qualquer outra instituição de ensino, nós também aprendemos a conviver com o mundo, com a sua história, com seus mecanismos, por isso que muitas vezes ensinar alguém a algo pode ser algo transformador, pois você está transmitindo uma informação a alguém que provavelmente a utilizará em algum momento da vida.</p>
+              <p>A educação também abrange temas muito importantes para incentivar a prática de atividades inovadoras, que abrangem temas também citados aqui como a tecnologia e a sustentabilidade.</p>
+            </div>
           </div>
         </div>
-        <div align="bottom">
-          <h1 class="Titulo" id="c1">Ações que Transformam o Mundo</h1>
-          <p class="Apresentacao">Olá, Bem-vindo á esta página, aqui, você verá alguns assuntos que de fato impactam no nosso dia-a-dia, e que transformarão o futuro em que viveremos, para isso, separei cada parte desse assunto em tópicos que são muito importantes.</p>
-          <p class="Apresentacao">Como pode perceber, existe um círculo no topo desta página que representa os 4 tópicos que serão falados aqui, cada um desses tópicos representam temas específicos como:</p>
-          <p class="Apresentacao" id="a1">Sustentabilidade</p>
-          <p class="Apresentacao" id="a2">Educação</p>
-          <p class="Apresentacao" id="a3">Coletividade</p>
-          <p class="Apresentacao" id="a4">Tecnologia</p>
-          <p class="Apresentacao">E também no canto superior direito você pode alterar a linguagem ou o tema para uma maior acessibilidade de leitura.</p>
-          <p class="Apresentacao">Enfim, confira o conteúdo abaixo.</p>
+      </section>
+
+      <section class="content-section collectivity">
+        <div class="section-container">
+          <div class="section-header">
+            <hr class="section-line">
+            <h2 class="section-title">Coletividade</h2>
+            <hr class="section-line">
+          </div>
+          <div class="section-content">
+            <div class="image-container">
+              <img class="section-image" alt="Coletividade" src="Imagens/Coletividade2.png" loading="lazy">
+            </div>
+            <div class="text-content">
+              <p>O mundo não seria o que é hoje sem agirmos em conjunto, sim, mais um tópico que trata sobre a relevância de transformar o nosso mundo é a coletividade, pois várias pessoas investindo em um projeto ou uma ação boa é o essencial para gerar mudanças em grande escala.</p>
+              <p>Esse é um assunto muito importante para tratarmos, pois a atualidade está se tornando cada vez mais individualista, onde as pessoas buscam cada vez menos agir ou participar de grupos e comunidades, isso traz alguns malefícios para a sociedade em geral como desigualdades, falta de aceitação, baixa estima, dentre outros problemas psicológicos e sociais.</p>
+              <p>Desde os tempos primordiais do ser humano, nós apenas evoluímos em coletivo, e a coletividade nos propõe uma ampla variedade de coisas que não podemos fazer sozinhos. E por isso podemos aplicar isso ao nosso cotidiano, não podemos transformar o mundo apenas sozinhos, mas precisamos da cooperação e ajuda de todos como um só, ajudando na natureza, preservando matérias-primas e procurando novas soluções para problemas que vamos enfrentando no dia-a-dia.</p>
+            </div>
+          </div>
         </div>
-        <section class="Sustentabilidade">
-        <div align="bottom">
-          <hr class="Linha_sus">
-          <h1 class="Titulo_sus">Sustentabilidade</h1>
-          <hr class="Linha_sus">
-          <img class="Imagem" alt="Sustentabilidade" src="Imagens/Sustentabilidade2.png">
-          <p class="Texto_sus">O que claramente podemos citar aqui são ações sustentáveis que, de fato, transformam não só o mundo, mas sim quem somos.</p>
-          <p class="Texto_sus">Jogar o lixo no lugar correto, cuidar das árvores e plantas, e até mesmo plantá-las, reflete em um ambiente muito melhor para o ser humano conviver.</p>
-          <p class="Texto_sus">É claro que ações que transformam o mundo podem ser sustentáveis, isso é o que mais precisamos no momento, em muitos lugares do mundo vemos poluição, destruição ambiental, queimadas e devastação, e a sustentabilidade é a chave para termos um futuro potencialmente melhor. Você também faz parte disso, aliás, todos nós fazemos, a natureza nos beneficia com seus recursos naturais, por que não podemos contribuir com ela também? Não é mesmo?</p>
+
+        <div class="recommendations-section">
+          <p class="recommendations-intro">Wow, todos esses textos cansam de ler, não é? Bem, vou recomendar alguns filmes e documentários abaixo se você realmente se interessa nesses assuntos:</p>
+          
+          <div class="movie-grid">
+            <a href="https://g.co/kgs/9op2HnN" class="movie-card" target="_blank" rel="noopener">
+              <img class="movie-image" alt="Brave Blue World" src="Imagens/Filme1.png" loading="lazy">
+              <p class="movie-title">Brave Blue World (2020)</p>
+            </a>
+            <a href="https://g.co/kgs/QRPBJMc" class="movie-card" target="_blank" rel="noopener">
+              <img class="movie-image" alt="Seremos História?" src="Imagens/Filme2.png" loading="lazy">
+              <p class="movie-title">Seremos História? (2016)</p>
+            </a>
+            <a href="https://g.co/kgs/acX9yWC" class="movie-card" target="_blank" rel="noopener">
+              <img class="movie-image" alt="Minimalism: A Documentary About the Important Things" src="Imagens/Filme3.png" loading="lazy">
+              <p class="movie-title">Minimalism: A Documentary About the Important Things (2015)</p>
+            </a>
+          </div>
+          
+          <p class="transition-text">Ok, essas são as recomendações, podem ser poucas mas já é um início, você pode encontrar muito mais filmes, séries, documentários e livros que falam sobre os tópicos desta página na internet. Vamos continuar para o próximo assunto:</p>
         </div>
-        </section>
-        <section class="Educação">
-        <div align="bottom">
-          <hr class="Linha_edu">
-          <h1 class="Titulo_edu">Educação</h1>
-          <hr class="Linha_edu">
-          <img class="Imagem2" alt="Educação" src="Imagens/Educação2.png">
-          <p class="Texto_edu">Mais uma das ações que são muito importantes para o nosso futuro é a educação, pois é a educação que modela o que nós planejamos ser futuramente, e obviamente, impulsionar a nossa produtividade para adentrar o mundo do trabalho.</p>
-          <p class="Texto_edu">Mas não é só para trabalhar que nós vamos para a escola ou qualquer outra instituição de ensino, nós também aprendemos a conviver com o mundo, com a sua história, com seus mecanismos, por isso que muitas vezes ensinar alguém a algo pode ser algo transformador, pois você está transmitindo uma informação a alguêm que provavelmente a utilizará em algum momento da vida.</p>
-          <p class="Texto_edu">A educação também abrange temas muito importantes para incentivar a prática de atividades inovadoras, que abrangem temas também citados aqui como a tecnologia e a sustentabilidade.</p>
+      </section>
+      <section class="content-section technology">
+        <div class="section-container">
+          <div class="section-header">
+            <hr class="section-line">
+            <h2 class="section-title">Tecnologia</h2>
+            <hr class="section-line">
+          </div>
+          <div class="section-content">
+            <div class="image-container">
+              <img class="section-image" alt="Tecnologia" src="Imagens/Tecnologia2.png" loading="lazy">
+            </div>
+            <div class="text-content">
+              <p>A tecnologia é a nossa ferramenta para fazer as mudanças acontecerem. O desenvolvimento e a evolução do nosso conhecimento fornece uma maior oportunidade de mudarmos o mundo e o nosso futuro.</p>
+              <p>Por isso a tecnologia é o que irá transformar o nosso mundo, pois com a tecnologia nós podemos desenvolver novas formas de preservar fontes naturais e nossa vida pessoal, tudo em um momento tão necessário como agora.</p>
+              <p>Vale ressaltar que todos os assuntos aqui são de extrema importância, a geração atual está e irá sofrer mudanças severas futuramente, e principalmente no meio ambiente. Como as geleiras das regiões árticas que derretem dia após dia, o calor extremo que ocorre na região européia, desmatamentos, queimadas, e as demais descobertas como o avanço da inteligência artificial, o metaverso, realidade virtual, processadores quânticos, carros e eletrônicos inteligentes, e muito mais que ainda vem por aí, por isso a tecnologia é o que continuará inovando nossas vidas.</p>
+              <p class="highlight-text">E essas são as verdadeiras ações que transformarão o mundo.</p>
+              <p>Mas nada disso seria importante sem vocês, trabalhadores que passam dia após dia se esforçando por um mundo melhor, professores que investem no futuro e na vida de estudantes, alunos que se dedicam para serem futuros empreendedores ou profissionais, e muitas outras pessoas, que compõem uma sociedade em um mundo que está em constante transformação.</p>
+            </div>
+          </div>
         </div>
-        </section>
-        <section class="Coletividade">
-        <div align="bottom">
-          <hr class="Linha_col">
-          <h1 class="Titulo_col">Coletividade</h1>
-          <hr class="Linha_col">
-          <img class="Imagem3" alt="Coletividade" src="Imagens/Coletividade2.png">
-          <p class="Texto_col">O mundo não seria o que é hoje sem agirmos em conjunto, sim, mais um tópico que trata sobre a relevância de transformar o nosso mundo é a coletividade, pois várias pessoas investindo em um projeto ou uma ação boa é o essencial para gerar mudanças em grande escala.</p>
-          <p class="Texto_col">Esse é um assunto muito importante para tratarmos, pois a atualidade está se tornando cada vez mais induvidualista, onde as pessoas buscam cada vez menos agir ou participar de grupos e comunidades, isso traz alguns malefícios para a sociedade em geral como desigualdades, falta de aceitação, baixa estima, dentre outros problemas psicológicos e sociais.</p>
-          <p class="Texto_col">Desde os tempos primordiais do ser humano, nós apenas evoluímos em coletivo, e a coletividade nos propõe uma ampla variedade de coisas que não podemos fazer sozinhos. E por isso podemos aplicar isso ao nosso cotidiano, não podemos transformar o mundo apenas sozinhos, mas precisamos da cooperação e ajuda de todos como um só, ajudando na natureza, preservando matérias-primas e procurando novas soluções para problemas que vamos enfrentando no dia-a-dia.</p>
-          <p class="Recomendacoes">Wow, todos esses textos cansam de ler, não é? Bem, vou recomendar alguns filmes e documentários abaixo se você realmente se interessa nesses assuntos:</p>
-          <a href="https://g.co/kgs/9op2HnN">
-          <img class="Filmes" alt="Brave Blue World" src="Imagens/Filme1.png">
-          <p class="Texto_filmes">Brave Blue World (2020)</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-content">
+        <p class="acknowledgments">Agradeço por ter visualizado este projeto no qual passei dias me dedicando, é um prazer fazer parte de um projeto que trata sobre um tema tão incrível para as nossas vidas. Obrigado.</p>
+        
+        <div class="license-info">
+          <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">
+            <img alt="Licença Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" />
           </a>
-          <a href="https://g.co/kgs/QRPBJMc">
-          <img class="Filmes" alt="Seremos História?" src="Imagens/Filme2.png">
-          <p class="Texto_filmes">Seremos História? (2016)</p>
-          </a>
-          <a href="https://g.co/kgs/acX9yWC">
-          <img class="Filmes" alt="Minimalism: A Documentary About the Important Things" src="Imagens/Filme3.png">
-          <p class="Texto_filmes">Minimalism: A Documentary About the Important Things (2015)</p>
-          </a>
-          <p class="Inicio_tech">Ok, essas são as recomendações, podem ser poucas mas já é um início, você pode encontrar muito mais filmes, séries, documentários e livros que falam sobre os tópicos desta página na internet. Vamos continuar para o próximo assunto:</p>
-        </div>
-        </section>
-        <section class="Tecnologia">
-        <div align="Bottom">
-          <hr class="Linha_tech">
-          <h1 class="Titulo_tech">Tecnologia</h1>
-          <hr class="Linha_tech">
-          <img class="Imagem4" alt="Tecnologia" src="Imagens/Tecnologia2.png">
-          <p class="Texto_tech">A tecnologia é a nossa ferramenta para fazer as mudanças acontecerem. O desenvolvimento e a evolução do nosso conhecimento fornece uma maior oportunidade de mudarmos o mundo e o nosso futuro.</p>
-          <p class="Texto_tech">Por isso a tecnologia é o que irá transformar o nosso mundo, pois com a tecnologia nós podemos desenvolver novas formas de preservar fontes naturais e nossa vida pessoal, tudo em um momento tão necessário como agora.</p>
-          <p class="Texto_tech">Vale ressaltar que todos os assuntos aqui são de extrema importância, a geração atual está e irá sofrer mudanças severas futuramente, e principalmente no meio ambiente. Como as geleiras das regiões árticas que derretem dia após dia, o calor extremo que ocorre na região européia, desmatamentos, queimadas, e as demais descobertas como o avanço da inteligência artificial, o metaverso, realidade virtual, processadores quânticos, carros e eletrônicos inteligentes, e muito mais que ainda vem por aí, por isso a tecnologia é o que continuará inovando nossas vidas.</p>
-          <p class="Texto_tech" id="b1">E essas são as verdadeiras ações que transformarão o mundo.</p>
-          <p class="Texto_tech">Mas nada disso seria importante sem vocês, trabalhadores que passam dia após dia se esforçando por um mundo melhor, professores que investem no futuro e na vida de estudantes, alunos que se dedicam para serem futuros empreendedores ou profissionais, e muitas outras pessoas, que compõem uma sociedade em um mundo que está em constante transformação.</p>
-        </div>
-        </section>
-        <div align="bottom">
-          <p class="Agradecimentos">Agradeço por ter visualizado este projeto no qual passei dias me dedicando, é um prazer fazer parte de um projeto que trata sobre um tema tão incrível para as nossas vidas. Obrigado.</p>
-        </div>
-        <div align="bottom" class="Info">
-          <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Licença Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />Este obra está licenciado com uma Licença <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.pt_BR">Creative Commons Atribuição 4.0 Internacional</a>.
+          <br>
+          Esta obra está licenciada com uma Licença <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.pt_BR" target="_blank" rel="noopener">Creative Commons Atribuição 4.0 Internacional</a>.
           <p>Este site foi desenvolvido por @IzaacCoding36. Todos os direitos reservados.</p>
           <p>Curitiba, Paraná, Brasil. 2025.</p>
         </div>
-      </center>
-    </body>
+      </div>
+    </footer>
+
     <script src="./JavaScript/botoes.js"></script>
+  </body>
 </html>
