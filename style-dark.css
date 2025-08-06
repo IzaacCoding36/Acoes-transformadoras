@@ -178,11 +178,11 @@ body {
   align-items: center;
   max-width: var(--container-max-width);
   margin: 0 auto;
-  padding: 1rem;
+  padding: 0.5rem 1rem;
 }
 
 .nav-logo {
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-large);
   font-weight: var(--font-weight-bold);
   color: var(--accent-purple);
   text-decoration: none;
