@@ -75,6 +75,7 @@ html {
   scroll-behavior: smooth;
   background: linear-gradient(90deg, var(--primary-bg) 0%, var(--secondary-bg) 50%, var(--primary-bg) 100%);
   background-attachment: fixed;
+  background-color: #4f3c59;
   transition: filter 3s ease;
 }
 
