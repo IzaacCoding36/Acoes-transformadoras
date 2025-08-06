@@ -338,4 +338,58 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    // Mobile menu functionality
+    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+    
+    if (mobileMenuToggle && navMenu) {
+        mobileMenuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            const isActive = navMenu.classList.contains('active');
+            mobileMenuToggle.setAttribute('aria-expanded', isActive);
+            mobileMenuToggle.innerHTML = isActive ? '✕' : '☰';
+        });
+        
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!mobileMenuToggle.contains(e.target) && !navMenu.contains(e.target)) {
+                navMenu.classList.remove('active');
+                mobileMenuToggle.setAttribute('aria-expanded', 'false');
+                mobileMenuToggle.innerHTML = '☰';
+            }
+        });
+        
+        // Close mobile menu when window resizes to desktop
+        window.addEventListener('resize', () => {
+            if (window.innerWidth >= 768) {
+                navMenu.classList.remove('active');
+                mobileMenuToggle.setAttribute('aria-expanded', 'false');
+                mobileMenuToggle.innerHTML = '☰';
+            }
+        });
+    }
+    
+    // Enhanced mobile dropdown functionality
+    const mobileDropdowns = document.querySelectorAll('.dropdown');
+    mobileDropdowns.forEach(dropdown => {
+        const button = dropdown.querySelector('.dropbtn');
+        const content = dropdown.querySelector('.dropdown-content');
+        
+        button.addEventListener('click', (e) => {
+            e.stopPropagation();
+            
+            // On mobile, toggle the dropdown with class instead of style
+            if (window.innerWidth < 768) {
+                dropdown.classList.toggle('active');
+                
+                // Close other dropdowns
+                mobileDropdowns.forEach(otherDropdown => {
+                    if (otherDropdown !== dropdown) {
+                        otherDropdown.classList.remove('active');
+                    }
+                });
+            }
+        });
+    });
+
 });
